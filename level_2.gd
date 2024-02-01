@@ -1,4 +1,5 @@
 extends Node2D
+
 var active = true
 
 # Called when the node enters the scene tree for the first time.
@@ -15,5 +16,5 @@ func _on_border_body_entered(body):
 	get_tree().reload_current_scene()
 
 func _on_end_body_entered(body):
-	$WinScreen/ConfirmationDialog.visible = true
+	$EndScreen/ConfirmationDialog.visible = true
 	active = false
